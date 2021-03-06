@@ -2,7 +2,8 @@ package enums;
 
 public enum DaysInWeek {
 
-    //options
+    //Create a data type which forces the user to use only this options
+
     MONDAY,
     TUESDAY,
     WEDNESDAY,

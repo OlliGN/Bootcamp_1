@@ -43,9 +43,27 @@ public class Stock {
     public double getCloseLow() {
         return closeLow;
     }
-    //method for buy notification
+    //methods for buy/sell notification
     public void buy(){
         volume ++;
+        currentPrice += currentPrice * 0.05;
     }
 
+    public void sell(){
+        volume --;
+        currentPrice -= currentPrice * 0.05;
+    }
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "currentPrice=" + currentPrice +
+                ", symbol='" + symbol + '\'' +
+                ", volume=" + volume +
+                ", marketCap=" + marketCap +
+                ", closeHigh=" + closeHigh +
+                ", closeLow=" + closeLow +
+                ", history=" + history +
+                '}';
+    }
 }

@@ -18,12 +18,18 @@ ArithmeticException, ClassNotFoundException, ArrayIndexOutOfBoundException, Secu
 
 #Finally keyword
 The finally block follows a try block, or a catch block. 
-A finally block of code always executes, irrespective of occurrence of an Exception. Using a finally block allows you to run any cleanup-type statements that you want to execute, no matter what happens in the protected code.
+A finally block of code always executes, irrespective of occurrence of an Exception. 
+Using a finally block allows you to run any cleanup-type statements that you want to execute, 
+no matter what happens in the protected code.
+Finally blocks needed for close statements. WriteFie and ReadFile(I/O) classes use bufferedStreams(byte[]) 
+which need to be closed after usage. So if an exception is thrown while writing or reading  a file some bytes could end up close to the middle.
 
 
 ##Unchecked exceptions VS Checked exceptions
 checked exceptions are checked at runtime of the program, while Unchecked exceptions are checked at the compile time of the program.
 Checked and Unchecked, both can be created manually and both can be handled using try, catch and finally.
+Checked - program can skip and continue.
+Unchecked - breaks the code.
 
 ###Trow vs Trows
 Throw keyword is used inside a function. It is used when it required to throw an exception logically.

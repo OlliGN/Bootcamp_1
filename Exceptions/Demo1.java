@@ -23,6 +23,7 @@ public class Demo1 {
             WriteFile.writeToFile("Good buy world");
 
         } catch (IOException e) {
+            e.printStackTrace();
             throw new IOException("Error Writing Good buy world");
         }
     }

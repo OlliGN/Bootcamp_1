@@ -24,14 +24,15 @@ parent class reference is used to refer to a child class object.
 
 # Inheritance
 Inheritance is a mechanism in which one class acquires the property of another class. Use keyword extends
+#extends Keyword
+extends - is the keyword used to inherit the properties of a class.
 
-When creating a new class in Java, you can define the class to inherit from an existing class. Inheritance if the
-process by which the new child subclass automatically includes any public or protected primitives, objects or methods
-defined in the parent class. Inheritance is a process of avoiding code repetition, which is a very bad practice in
-programming.
+When creating a new class in Java, you can define the class to inherit from an existing class.
+Inheritance is the process by which the new child subclass automatically includes any public or protected primitives, 
+objects or methods defined in the parent class. 
+Inheritance is a process of avoiding code repetition, which is a very bad practice in programming.
 
 # Encapsulation
-
 Encapsulation in Java is a process of wrapping the data (variables) and code together into a single unit. For example, a
 capsule which is mixed of several medicines. Now we can use setter and getter methods to set and get the data in it.
 

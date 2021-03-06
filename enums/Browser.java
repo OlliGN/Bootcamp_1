@@ -8,7 +8,6 @@ public class Browser {
 
     public static BrowserService getDriver(Browsers browser) throws Exception {
 
-
         switch (browser) {
 
             case CHROME:
